@@ -9,8 +9,8 @@ using TradingEngineServer.Core.Configuration;
 namespace TradingEngineServer.Core
 {
 	/*
-	 * BackgroundService puts a contstraint on TradingEngineServer 
-	 * - needs to overide background service's key method because it inherits
+	 * BackgroundService puts a constraint on TradingEngineServer 
+	 * - needs to override background service's key method because it inherits
 	 *   from BackgroundService
 	 * - in this case it's ExecuteAsync
 	 * 
@@ -44,7 +44,7 @@ namespace TradingEngineServer.Core
 			// we want to ensure the logger is not null (sanity check)
 			_logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
-			// the ?? (null-coalescing operator) returns the LHS opearand if it isn't null
+			// the ?? (null-coalescing operator) returns the LHS operand if it isn't null
 			_tradingEngineServerConfig = config.Value ?? throw new ArgumentNullException(nameof(config));
 		}
 
@@ -66,11 +66,11 @@ namespace TradingEngineServer.Core
 
         /*
          * notes: 
-		 * - with services or game enginers there will always be a loop
+		 * - with services or game engines there will always be a loop
 		 * - server may not need a loop but good to have for completion
 		 * - BackgroundService has a protected abstract method called ExecuteAsync
-		 *		- we need to overide this to use the server
-		 *		- we need to make this available in a public mehtod under TradningEngineServer
+		 *		- we need to override this to use the server
+		 *		- we need to make this available in a public method under TradingEngineServer
 		 */
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {

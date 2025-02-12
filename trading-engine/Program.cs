@@ -26,7 +26,7 @@ using TradingEngineServer.Core;
 using var engine = TradingEngineServerHostBuilder.BuildTradingEngineServer();
 TradingEngineServerServiceProvider.ServiceProvider = engine.Services;
 
-// adding scope in case we need more
+// adding scope in case we need it later on
 {
     using var scope = TradingEngineServerServiceProvider.ServiceProvider.CreateScope();
     await engine.RunAsync().ConfigureAwait(false);

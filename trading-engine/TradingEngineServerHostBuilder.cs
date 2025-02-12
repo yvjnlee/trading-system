@@ -23,7 +23,7 @@ namespace TradingEngineServer.Core
 {
 	/*
 	 * sealed class
-	 * - nobody can overide the content of the methods of this class
+	 * - nobody can override the content of the methods of this class
 	 */
 	public sealed class TradingEngineServerHostBuilder
 	{

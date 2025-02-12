@@ -40,7 +40,7 @@
           "dependencies": {
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[9.0.2, )"
             }
           },
           "imports": [
