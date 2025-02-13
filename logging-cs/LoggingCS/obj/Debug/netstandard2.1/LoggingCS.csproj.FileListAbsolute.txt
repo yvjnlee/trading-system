@@ -6,3 +6,4 @@
 /Users/eugenelee/Documents/dev/trading-system/logging-cs/LoggingCS/obj/Debug/netstandard2.1/LoggingCS.csproj.CoreCompileInputs.cache
 /Users/eugenelee/Documents/dev/trading-system/logging-cs/LoggingCS/obj/Debug/netstandard2.1/TradingEngineServer.Logging.dll
 /Users/eugenelee/Documents/dev/trading-system/logging-cs/LoggingCS/obj/Debug/netstandard2.1/TradingEngineServer.Logging.pdb
+/Users/eugenelee/Documents/dev/trading-system/logging-cs/LoggingCS/obj/Debug/netstandard2.1/LoggingCS.sourcelink.json

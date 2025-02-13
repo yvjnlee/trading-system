@@ -20,12 +20,16 @@
       },
       "TradingEngineServer.Instrument/1.0.0": {
         "runtime": {
-          "TradingEngineServer.Instrument.dll": {}
+          "TradingEngineServer.Instrument.dll": {
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "TradingEngineServer.Orders/1.0.0": {
         "runtime": {
-          "TradingEngineServer.Orders.dll": {}
+          "TradingEngineServer.Orders.dll": {
+            "fileVersion": "0.0.0.0"
+          }
         }
       },
       "TradingEngineServer.Instrument.Reference/0.0.0.0": {

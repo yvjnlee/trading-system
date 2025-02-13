@@ -1,8 +1,8 @@
 /Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/bin/Debug/netstandard2.1/TradingEngineServer.Instrument.deps.json
 /Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/bin/Debug/netstandard2.1/TradingEngineServer.Instrument.dll
 /Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/bin/Debug/netstandard2.1/TradingEngineServer.Instrument.pdb
-/Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/obj/Debug/netstandard2.1/InstrumentCS.csproj.AssemblyReference.cache
 /Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/obj/Debug/netstandard2.1/InstrumentCS.GeneratedMSBuildEditorConfig.editorconfig
 /Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/obj/Debug/netstandard2.1/InstrumentCS.csproj.CoreCompileInputs.cache
 /Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/obj/Debug/netstandard2.1/TradingEngineServer.Instrument.dll
 /Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/obj/Debug/netstandard2.1/TradingEngineServer.Instrument.pdb
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/InstrumentCS/obj/Debug/netstandard2.1/InstrumentCS.sourcelink.json
