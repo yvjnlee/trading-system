@@ -1,0 +1,8 @@
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrdersCS/bin/Debug/netstandard2.1/TradingEngineServer.Orders.deps.json
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrdersCS/bin/Debug/netstandard2.1/TradingEngineServer.Orders.dll
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrdersCS/bin/Debug/netstandard2.1/TradingEngineServer.Orders.pdb
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrdersCS/obj/Debug/netstandard2.1/OrdersCS.csproj.AssemblyReference.cache
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrdersCS/obj/Debug/netstandard2.1/OrdersCS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrdersCS/obj/Debug/netstandard2.1/OrdersCS.csproj.CoreCompileInputs.cache
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrdersCS/obj/Debug/netstandard2.1/TradingEngineServer.Orders.dll
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrdersCS/obj/Debug/netstandard2.1/TradingEngineServer.Orders.pdb

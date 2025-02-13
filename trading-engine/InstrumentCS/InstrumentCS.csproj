@@ -6,6 +6,8 @@
         <RootNamespace>TradingEngineServer.Instrument</RootNamespace>
         <AssemblyName>TradingEngineServer.Instrument</AssemblyName>
         <Nullable>enable</Nullable>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
     </PropertyGroup>
 
 </Project>

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentCS", "InstrumentC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersCS", "OrdersCS\OrdersCS.csproj", "{91D13E33-16C4-4563-B4F6-5CB0F67B4975}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderbookCS", "OrderbookCS\OrderbookCS.csproj", "{5EB7C777-F646-473A-B9ED-5472ACDAB110}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{91D13E33-16C4-4563-B4F6-5CB0F67B4975}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91D13E33-16C4-4563-B4F6-5CB0F67B4975}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91D13E33-16C4-4563-B4F6-5CB0F67B4975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB7C777-F646-473A-B9ED-5472ACDAB110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB7C777-F646-473A-B9ED-5472ACDAB110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB7C777-F646-473A-B9ED-5472ACDAB110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB7C777-F646-473A-B9ED-5472ACDAB110}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

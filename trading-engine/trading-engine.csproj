@@ -6,6 +6,9 @@
     <LangVersion>9</LangVersion>
     <RootNamespace>TradingEngineServer.Core</RootNamespace>
     <AssemblyName>TradingEngineServer.Core</AssemblyName>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
   </PropertyGroup>
   
   <ItemGroup>

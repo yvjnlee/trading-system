@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TradingEngineServer.Security
+namespace TradingEngineServer.Instrument
 {
     public class Security
     {

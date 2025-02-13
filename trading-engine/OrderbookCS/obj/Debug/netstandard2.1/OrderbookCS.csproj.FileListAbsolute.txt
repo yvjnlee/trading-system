@@ -1,0 +1,13 @@
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/bin/Debug/netstandard2.1/TradingEngineServer.Orderbook.deps.json
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/bin/Debug/netstandard2.1/TradingEngineServer.Orderbook.dll
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/bin/Debug/netstandard2.1/TradingEngineServer.Orderbook.pdb
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/bin/Debug/netstandard2.1/TradingEngineServer.Instrument.dll
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/bin/Debug/netstandard2.1/TradingEngineServer.Orders.dll
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/bin/Debug/netstandard2.1/TradingEngineServer.Instrument.pdb
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/bin/Debug/netstandard2.1/TradingEngineServer.Orders.pdb
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/obj/Debug/netstandard2.1/OrderbookCS.csproj.AssemblyReference.cache
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/obj/Debug/netstandard2.1/OrderbookCS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/obj/Debug/netstandard2.1/OrderbookCS.csproj.CoreCompileInputs.cache
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/obj/Debug/netstandard2.1/OrderbookCS.csproj.CopyComplete
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/obj/Debug/netstandard2.1/TradingEngineServer.Orderbook.dll
+/Users/eugenelee/Documents/dev/trading-system/trading-engine/OrderbookCS/obj/Debug/netstandard2.1/TradingEngineServer.Orderbook.pdb
