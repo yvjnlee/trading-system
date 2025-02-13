@@ -5,6 +5,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using TradingEngineServer.Core.Configuration;
+using TradingEngineServer.Logging;
 
 namespace TradingEngineServer.Core
 {
@@ -27,7 +28,7 @@ namespace TradingEngineServer.Core
 		 * - we have the type of class we wanna log
 		 * 
 		 */
-		private readonly ILogger<TradingEngineServer> _logger;
+		private readonly ITextLogger _logger;
 		private readonly TradingEngineServerConfiguration _tradingEngineServerConfig;
 
         /*
@@ -38,11 +39,11 @@ namespace TradingEngineServer.Core
 		 * - we dont wanna write code to read from this file/format it 
 		 * - we want Microsoft's library to take care of that for us
 		 */
-        public TradingEngineServer(ILogger<TradingEngineServer> logger,
+        public TradingEngineServer(ITextLogger textLogger,
 			IOptions<TradingEngineServerConfiguration> config)
 		{
 			// we want to ensure the logger is not null (sanity check)
-			_logger = logger ?? throw new ArgumentNullException(nameof(logger));
+			_logger = textLogger ?? throw new ArgumentNullException(nameof(textLogger));
 
 			// the ?? (null-coalescing operator) returns the LHS operand if it isn't null
 			_tradingEngineServerConfig = config.Value ?? throw new ArgumentNullException(nameof(config));
@@ -74,14 +75,14 @@ namespace TradingEngineServer.Core
 		 */
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
-			_logger.LogInformation($"Starting {nameof(TradingEngineServer)}");
+			_logger.Information(nameof(TradingEngineServer),$"Starting {nameof(TradingEngineServer)}");
 
             while (!stoppingToken.IsCancellationRequested)
 			{
 
 			}
 
-            _logger.LogInformation($"Stopped {nameof(TradingEngineServer)}");
+			_logger.Information(nameof(TradingEngineServer),$"Stopping {nameof(TradingEngineServer)}");
 
             return Task.CompletedTask;
         }

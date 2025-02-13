@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    ".NETCoreApp,Version=v3.1": {
       "Microsoft.Bcl.AsyncInterfaces/9.0.2": {
         "type": "package",
         "compile": {
@@ -714,12 +714,12 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {
+          "lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
         },
@@ -796,6 +796,22 @@
           "buildTransitive/netcoreapp2.0/System.Text.Json.targets": {}
         }
       },
+      "System.Threading.Tasks.Dataflow/9.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/System.Threading.Tasks.Dataflow.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/System.Threading.Tasks.Dataflow.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp2.0/System.Threading.Tasks.Dataflow.targets": {}
+        }
+      },
       "System.Threading.Tasks.Extensions/4.5.4": {
         "type": "package",
         "compile": {
@@ -803,6 +819,20 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "TradingEngineServer.Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "9.0.2",
+          "System.Threading.Tasks.Dataflow": "9.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TradingEngineServer.Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TradingEngineServer.Logging.dll": {}
         }
       }
     }
@@ -2093,6 +2123,36 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Threading.Tasks.Dataflow/9.0.2": {
+      "sha512": "eiTiVDGrEtLEhrQb2RHc7RNC6iSsqqjkQjUuVb1S3sPIJsaEyy8TQfrtyLKajrmxQ9bqrSFc0J8jgUjFXvDQKQ==",
+      "type": "package",
+      "path": "system.threading.tasks.dataflow/9.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Threading.Tasks.Dataflow.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Threading.Tasks.Dataflow.targets",
+        "lib/net462/System.Threading.Tasks.Dataflow.dll",
+        "lib/net462/System.Threading.Tasks.Dataflow.xml",
+        "lib/net8.0/System.Threading.Tasks.Dataflow.dll",
+        "lib/net8.0/System.Threading.Tasks.Dataflow.xml",
+        "lib/net9.0/System.Threading.Tasks.Dataflow.dll",
+        "lib/net9.0/System.Threading.Tasks.Dataflow.xml",
+        "lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
+        "lib/netstandard2.0/System.Threading.Tasks.Dataflow.xml",
+        "lib/netstandard2.1/System.Threading.Tasks.Dataflow.dll",
+        "lib/netstandard2.1/System.Threading.Tasks.Dataflow.xml",
+        "system.threading.tasks.dataflow.9.0.2.nupkg.sha512",
+        "system.threading.tasks.dataflow.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Threading.Tasks.Extensions/4.5.4": {
       "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
       "type": "package",
@@ -2129,11 +2189,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TradingEngineServer.Logging/1.0.0": {
+      "type": "project",
+      "path": "../logging-cs/LoggingCS/LoggingCS.csproj",
+      "msbuildProject": "../logging-cs/LoggingCS/LoggingCS.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "Microsoft.Extensions.Hosting >= 9.0.2"
+    ".NETCoreApp,Version=v3.1": [
+      "Microsoft.Extensions.Hosting >= 9.0.2",
+      "TradingEngineServer.Logging >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2143,7 +2209,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/eugenelee/Documents/dev/trading-system/trading-engine/trading-engine.csproj",
-      "projectName": "trading-engine",
+      "projectName": "TradingEngineServer.Core",
       "projectPath": "/Users/eugenelee/Documents/dev/trading-system/trading-engine/trading-engine.csproj",
       "packagesPath": "/Users/eugenelee/.nuget/packages/",
       "outputPath": "/Users/eugenelee/Documents/dev/trading-system/trading-engine/obj/",
@@ -2152,15 +2218,19 @@
         "/Users/eugenelee/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "netcoreapp3.1"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "projectReferences": {}
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "/Users/eugenelee/Documents/dev/trading-system/logging-cs/LoggingCS/LoggingCS.csproj": {
+              "projectPath": "/Users/eugenelee/Documents/dev/trading-system/logging-cs/LoggingCS/LoggingCS.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2170,8 +2240,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.Extensions.Hosting": {
             "target": "Package",
@@ -2192,15 +2262,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
+            "version": "[3.1.10, 3.1.10]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.osx-arm64",
-            "version": "[6.0.31, 6.0.31]"
+            "name": "Microsoft.NETCore.App.Host.osx-x64",
+            "version": "[3.1.32, 3.1.32]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.31, 6.0.31]"
+            "version": "[3.1.0, 3.1.0]"
           }
         ],
         "frameworkReferences": {

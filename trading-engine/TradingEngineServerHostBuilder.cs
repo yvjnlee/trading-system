@@ -2,8 +2,9 @@
 using Microsoft.Extensions.Hosting;
 
 using System;
-
+using TradingEngineServer.Logging;
 using TradingEngineServer.Core.Configuration;
+using TradingEngineServer.Logging.LoggingConfiguration;
 
 /*
  * what does the host builder do?
@@ -28,12 +29,13 @@ namespace TradingEngineServer.Core
 	public sealed class TradingEngineServerHostBuilder
 	{
 		public static IHost BuildTradingEngineServer()
-			=> Host.CreateDefaultBuilder().ConfigureServices((context, services) =>
+			=> Host.CreateDefaultBuilder().ConfigureServices((hostContext, services) =>
 			{
 				// Start with config
 				services.AddOptions();
 				// configuring our services to show that TradingEngineServerConfiguration object exists
-				services.Configure<TradingEngineServerConfiguration>(context.Configuration.GetSection(nameof(TradingEngineServerConfiguration)));
+				services.Configure<TradingEngineServerConfiguration>(hostContext.Configuration.GetSection(nameof(TradingEngineServerConfiguration)));
+				services.Configure<LoggerConfiguration>(hostContext.Configuration.GetSection(nameof(LoggerConfiguration)));
 
 				/*
 				 * Add singleton objects
@@ -43,6 +45,7 @@ namespace TradingEngineServer.Core
 				 *		- 
 				 */
 				services.AddSingleton<ITradingEngineServer, TradingEngineServer>();
+				services.AddSingleton<ITextLogger, TextLogger>();
 
 				// this line will override line 45/previous singleton object associates with interfaces
 				// services.AddSingleton<ITradingEngineServer, TradingEngineServer>();
