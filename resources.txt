@@ -6,4 +6,6 @@ https://binary-studio.com/blog/2015/10/23/task-cancellation-in-c-and-things-you-
 https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-5.0
 https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences
-
+https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose
+https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/finalizers
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/record

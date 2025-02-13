@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "trading-engine", "trading-e
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingCS", "..\logging-cs\LoggingCS\LoggingCS.csproj", "{8DE9CD97-B604-42A7-A9EF-F469919378F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstrumentCS", "InstrumentCS\InstrumentCS.csproj", "{B23D9292-E178-4EB3-8196-E909DD66A2EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersCS", "OrdersCS\OrdersCS.csproj", "{91D13E33-16C4-4563-B4F6-5CB0F67B4975}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8DE9CD97-B604-42A7-A9EF-F469919378F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DE9CD97-B604-42A7-A9EF-F469919378F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DE9CD97-B604-42A7-A9EF-F469919378F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B23D9292-E178-4EB3-8196-E909DD66A2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23D9292-E178-4EB3-8196-E909DD66A2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23D9292-E178-4EB3-8196-E909DD66A2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B23D9292-E178-4EB3-8196-E909DD66A2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D13E33-16C4-4563-B4F6-5CB0F67B4975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D13E33-16C4-4563-B4F6-5CB0F67B4975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D13E33-16C4-4563-B4F6-5CB0F67B4975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D13E33-16C4-4563-B4F6-5CB0F67B4975}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
